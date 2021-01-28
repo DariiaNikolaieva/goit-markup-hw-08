@@ -262,6 +262,13 @@ input {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .benefit {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .benefit__title--hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -306,10 +313,10 @@ input {
   content: '';
   height: 120px;
   background-color: #f5f4fa;
-  margin-bottom: 30px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 .antenna::before {
@@ -346,5 +353,11 @@ input {
   font-size: 14px;
   line-height: 1.7;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .benefit__essence {
+    margin-bottom: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

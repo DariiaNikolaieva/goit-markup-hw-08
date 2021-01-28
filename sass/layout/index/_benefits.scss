@@ -1,6 +1,11 @@
 .benefit {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .benefit__title--hidden {
@@ -37,10 +42,10 @@
     content: '';
     height: 120px;
     background-color: getColor('bgc-secondary');
-    margin-bottom: 30px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     border-radius: 4px;
+    margin-bottom: 30px;
   }
 }
 
@@ -78,4 +83,8 @@
   font-size: getFont-size('main');
   line-height: 1.7;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
