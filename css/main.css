@@ -348,12 +348,17 @@ input {
 }
 
 .benefit__name {
-  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .benefit__name {
+    text-align: center;
+  }
 }
 
 .benefit__essence {

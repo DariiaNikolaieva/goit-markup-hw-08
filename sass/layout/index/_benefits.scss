@@ -79,7 +79,10 @@
 }
 
 .benefit__name {
-  text-align: center;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+
   font-weight: 700;
   font-size: getFont-size('main');
   line-height: 1.1;
