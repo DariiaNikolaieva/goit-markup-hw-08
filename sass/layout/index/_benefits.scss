@@ -20,12 +20,22 @@
 }
 
 .benefit__item {
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
     flex-basis: calc((100% - 30px) / 2);
     margin-right: 30px;
 
     &:nth-child(2n) {
       margin-right: 0;
+    }
+
+    &:nth-child(n + 3) {
+      margin-bottom: 0;
     }
   }
 
@@ -35,6 +45,8 @@
     &:not(:last-child) {
       margin-right: 30px;
     }
+
+    margin-bottom: 0;
   }
 
   &::before {
@@ -82,9 +94,4 @@
   color: getColor('grey-text');
   font-size: getFont-size('main');
   line-height: 1.7;
-  margin-bottom: 30px;
-
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 0;
-  }
 }
