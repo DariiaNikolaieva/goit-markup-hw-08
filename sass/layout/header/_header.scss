@@ -1,0 +1,37 @@
+.header {
+  position: relative;
+  border-bottom: 1px solid #ececec;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 60px;
+}
+.nav__button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  @include transitions(fill);
+
+  .close__mob {
+    display: none;
+  }
+
+  &.is-open {
+    .close__mob {
+      display: block;
+    }
+    .menu__mob {
+      display: none;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    fill: getColor('button');
+    outline: none;
+  }
+}

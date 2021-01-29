@@ -1,0 +1,16 @@
+.site__nav {
+  display: none;
+
+  position: absolute;
+  top: 61px;
+  left: 0;
+  width: 100%;
+  background-color: getColor('bgc-main');
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+
+  &.is-open {
+    display: block;
+  }
+}
