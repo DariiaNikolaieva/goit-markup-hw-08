@@ -287,6 +287,25 @@ input {
   outline-offset: 0;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
+.agreement__button {
+  color: #ffffff;
+  background-color: #2196f3;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-style: none;
+  border-radius: 4px;
+  outline-color: #ffffff;
+  cursor: pointer;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -556,5 +575,247 @@ input {
   width: 100%;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 94px 15px;
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+
+.modal {
+  position: absolute;
+  background-color: #ffffff;
+  width: 450px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-property: scale;
+  transition-property: scale;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.modal__close-button:hover, .modal__close-button:focus {
+  fill: #2196f3;
+  outline: none;
+}
+
+.form {
+  padding: 40px;
+}
+
+.form__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.1;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.form__modal {
+  margin-bottom: 20px;
+}
+
+.input__container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.input__label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #757575;
+}
+
+.input__field {
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-top: 12px;
+  padding-left: 42px;
+  padding-bottom: 12px;
+  -webkit-transition-property: border;
+  transition-property: border;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input__field:focus {
+  border: 1px solid #2196f3;
+  outline: none;
+}
+
+.input__icon {
+  position: absolute;
+  top: 34px;
+  left: 15px;
+  fill: currentColor;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input__field:focus + .input__icon {
+  fill: #2196f3;
+  outline: none;
+}
+
+.input__comment {
+  padding: 12px 16px;
+  height: 120px;
+}
+
+.input__comment::-webkit-input-placeholder {
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.input__comment:-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.input__comment::-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.input__comment::placeholder {
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.agreement {
+  position: relative;
+}
+
+.agreement__checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.agreement__label {
+  display: block;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #757575;
+  margin-left: 37px;
+}
+
+.agreement__label::before {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  content: '';
+  display: block;
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/images-optimisized/svg/checkbox.svg);
+  -webkit-transition-property: background-image background-color;
+  transition-property: background-image background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.agreement__label:hover::before {
+  background-image: url(../images/images-optimisized/svg/checkbox-focus.svg);
+}
+
+.agreement__checkbox:focus + .agreement__label::before {
+  background-image: url(../images/images-optimisized/svg/checkbox-focus.svg);
+}
+
+.agreement__checkbox:checked + .agreement__label::before {
+  width: 16px;
+  height: 16px;
+  border-color: transparent;
+  background-color: #2196f3;
+  background-image: url(../images/images-optimisized/svg/check-agreement.svg);
+  background-size: contain;
+  background-origin: border-box;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.agreement__link {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #2196f3;
+}
+
+.agreement__button {
+  padding: 10px 32px;
+  margin-top: 30px;
+  margin-left: 125px;
 }
 /*# sourceMappingURL=main.css.map */
