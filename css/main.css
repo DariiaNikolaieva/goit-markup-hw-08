@@ -877,12 +877,9 @@ body.modal-open {
   padding-bottom: 10px;
   padding-right: 56px;
   margin-top: 30px;
-  margin-left: 85px;
 }
 
-@media screen and (min-width: 1200px) {
-  .agreement__button {
-    margin-left: 124px;
-  }
+.button__container {
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
