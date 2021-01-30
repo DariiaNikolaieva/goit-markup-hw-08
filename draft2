@@ -1,0 +1,29 @@
+ПОЯСНЕНИЕ ПО ШИРИНЕ МОДАЛЬНОГО ОКНА
+  
+  max-width: 450px;
+  width: 90%;
+
+  Обязательно в модалке давать максимальную ширину в пикселях 
+  и ширину в процентах
+
+.modal {
+  position: absolute;
+  background-color: getColor('bgc-main');
+  max-width: 450px;
+  width: 90%;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: scale(1);
+  @include transitions(scale);
+}
+
+li хорошо добавлять ширину, чтобы не ломалась вёрстка 
+и сразу бронируется место под размер картинки
+
+мобильне устройства начинаются с 320px
+
+даже если белый цвет бэкграунда, его нужно задавать в любом случае
+
+
+ @media screen and (min-width: 481px)

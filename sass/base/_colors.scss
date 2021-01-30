@@ -12,7 +12,9 @@ $color: (
   ///////////////////////// Button color
   'button': #2196f3,
   ///////////////////////// SVG color
-  'icon': #afb1b8
+  'icon': #afb1b8,
+  ///////////////////////// Border color
+  'border': #ececec
 );
 
 @function getColor($key) {

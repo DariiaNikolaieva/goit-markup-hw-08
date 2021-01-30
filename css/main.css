@@ -345,6 +345,7 @@ body.modal-open {
 .header {
   position: relative;
   border-bottom: 1px solid #ececec;
+  background-color: #ffffff;
 }
 
 .navigation {
@@ -412,6 +413,7 @@ body.modal-open {
 .benefit {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: #ffffff;
 }
 
 @media screen and (min-width: 1200px) {
@@ -583,7 +585,9 @@ body.modal-open {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 94px 15px;
+  padding-top: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
   overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
@@ -601,31 +605,49 @@ body.modal-open {
 }
 
 .backdrop.is-hidden .modal {
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 
 .modal {
-  position: absolute;
+  max-width: 450px;
+  width: 100%;
   background-color: #ffffff;
-  width: 450px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition-property: scale;
-  transition-property: scale;
+  opacity: 1;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 481px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    max-width: 450px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    width: 100%;
+  }
+}
+
 .modal__close-button {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 101px;
+  right: 23px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -637,6 +659,13 @@ body.modal-open {
 .modal__close-button:hover, .modal__close-button:focus {
   fill: #2196f3;
   outline: none;
+}
+
+@media screen and (min-width: 481px) {
+  .modal__close-button {
+    top: 8px;
+    right: 8px;
+  }
 }
 
 .form {
@@ -718,31 +747,46 @@ body.modal-open {
 }
 
 .input__comment::-webkit-input-placeholder {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
 .input__comment:-ms-input-placeholder {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
 .input__comment::-ms-input-placeholder {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
 .input__comment::placeholder {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+
+@media screen and (min-width: 1200px) {
+  .input__comment::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+  .input__comment:-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .input__comment::-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .input__comment::placeholder {
+    font-size: 12px;
+  }
 }
 
 .agreement {
@@ -758,16 +802,17 @@ body.modal-open {
 
 .agreement__label {
   display: block;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.7;
   color: #757575;
-  margin-left: 37px;
+  margin-left: 24px;
+  letter-spacing: 0.03em;
 }
 
 .agreement__label::before {
   position: absolute;
   top: 50%;
-  left: 12px;
+  left: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   content: '';
@@ -775,8 +820,8 @@ body.modal-open {
   width: 16px;
   height: 15px;
   background-image: url(../images/images-optimisized/svg/checkbox.svg);
-  -webkit-transition-property: background-image background-color;
-  transition-property: background-image background-color;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -807,6 +852,19 @@ body.modal-open {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 1200px) {
+  .agreement__label {
+    font-size: 14px;
+    margin-left: 37px;
+  }
+  .agreement__label::before {
+    top: 50%;
+    left: 12px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
 .agreement__link {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -814,8 +872,17 @@ body.modal-open {
 }
 
 .agreement__button {
-  padding: 10px 32px;
+  padding-top: 10px;
+  padding-left: 55px;
+  padding-bottom: 10px;
+  padding-right: 56px;
   margin-top: 30px;
-  margin-left: 125px;
+  margin-left: 85px;
+}
+
+@media screen and (min-width: 1200px) {
+  .agreement__button {
+    margin-left: 124px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -9,21 +9,22 @@
 }
 .agreement__label {
   display: block;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.7;
   color: getColor('grey-text');
-  margin-left: 37px;
+  margin-left: 24px;
+  letter-spacing: 0.03em;
   &::before {
     position: absolute;
     top: 50%;
-    left: 12px;
+    left: 0;
     transform: translateY(-50%);
     content: '';
     display: block;
     width: 16px;
     height: 15px;
     background-image: url(../images/images-optimisized/svg/checkbox.svg);
-    @include transitions(background-image background-color);
+    @include transitions(background-color);
   }
   &:hover::before {
     background-image: url(../images/images-optimisized/svg/checkbox-focus.svg);
@@ -41,6 +42,15 @@
     background-origin: border-box;
     @include transitions(fill);
   }
+  @media screen and (min-width: $desktop) {
+    &::before {
+      top: 50%;
+      left: 12px;
+      transform: translateY(-50%);
+    }
+    font-size: 14px;
+    margin-left: 37px;
+  }
 }
 .agreement__link {
   text-decoration-line: underline;
@@ -48,7 +58,14 @@
 }
 .agreement__button {
   @extend %button;
-  padding: 10px 32px;
+  padding-top: 10px;
+  padding-left: 55px;
+  padding-bottom: 10px;
+  padding-right: 56px;
   margin-top: 30px;
-  margin-left: 125px;
+  margin-left: 85px;
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 124px;
+  }
 }
