@@ -1,0 +1,28 @@
+.mob-social__list {
+  display: flex;
+}
+.mob-social__item {
+  margin-right: 10px;
+
+  &:not(:last-child)::after {
+    margin-left: 10px;
+    content: '|';
+    color: getColor('grey-text');
+  }
+}
+.mob-social__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  &:not(:last-child) {
+  }
+  color: getColor('grey-text');
+  @include transitions(color);
+
+  &:hover,
+  &:focus {
+    color: getColor('accent-text');
+    outline: none;
+  }
+}

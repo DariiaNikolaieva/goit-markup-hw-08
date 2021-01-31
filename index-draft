@@ -34,16 +34,6 @@
                         <li class="site-nav__item"><a class="site-nav__link" href="./portfolio.html">Портфолио</a></li>
                         <li class="site-nav__item"><a class="site-nav__link" href="">Контакты</a></li>
                     </ul>
-                    <ul class="contacts__mobile">
-                        <li class="contacts-mobile__item">
-                            <a class="contacts-mobile__link" href="tel:+380961111111">
-                                +38 096 111 11 11</a>
-                        </li>
-                        <li class="contacts-mobile__item">
-                            <a class="contacts-mobile__link" href="mailto:info@devstudio.com">
-                                info@devstudio.com</a>
-                        </li>
-                                            </ul>
                     <ul class="contacts">
                         <li class="contacts__item">
                             <a class="contacts__link" href="mailto:info@devstudio.com">
@@ -58,20 +48,6 @@
                                     <use href="./images/images-optimisized/svg/sprite.svg#icon-smartphone"></use>
                                 </svg>
                                 +38 096 111 11 11</a>
-                        </li>
-                    </ul>
-                    <ul class="mob-social__list">
-                        <li class="mob-social__item">
-                            <a class="mob-social__link" href="">Instagram</a>
-                        </li>
-                        <li class="mob-social__item">
-                            <a class="mob-social__link" href="">Twitter</a>
-                        </li>
-                        <li class="mob-social__item">
-                            <a class="mob-social__link" href="">Facebook</a>
-                        </li>
-                        <li class="mob-social__item">
-                            <a class="mob-social__link" href="">LinkedIn</a>
                         </li>
                     </ul>
                 </div>
