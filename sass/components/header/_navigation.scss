@@ -27,17 +27,25 @@
     margin-left: 88px;
     margin-right: 84px;
   }
+  @media screen and (min-width: $desktop) {
+    margin-left: 93px;
+    margin-right: 305px;
+  }
 }
 
 .site-nav__item {
+  position: relative;
+
   @media not screen and (min-width: $tablet) {
     &:not(:last-child) {
       margin-bottom: 32px;
     }
   }
-  position: relative;
-  &:not(:last-child) {
-    margin-right: 50px;
+
+  @media screen and (min-width: $tablet) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 

@@ -338,6 +338,12 @@ body.modal-open {
   line-height: 1.2;
 }
 
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+  }
+}
+
 .logo__accent {
   color: #2196f3;
 }
@@ -449,6 +455,13 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .site-nav__list {
+    margin-left: 93px;
+    margin-right: 305px;
+  }
+}
+
 .site-nav__item {
   position: relative;
 }
@@ -459,8 +472,10 @@ body.modal-open {
   }
 }
 
-.site-nav__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .site-nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .site-nav__link {
@@ -543,18 +558,35 @@ body.modal-open {
   outline: none;
 }
 
-.contacts {
-  margin: 21px auto;
-}
-
 @media not screen and (min-width: 768px) {
   .contacts {
     display: none;
   }
 }
 
+@media screen and (min-width: 768px) {
+  .contacts {
+    margin-top: 21px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 32px;
+  }
+}
+
 .contacts__item:not(:last-child) {
-  margin-bottom: 10px;
+  margin-right: 30px;
+}
+
+@media not screen and (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .contacts__icon {
@@ -580,6 +612,12 @@ body.modal-open {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    font-size: 14px;
+  }
 }
 
 .contacts__link:hover, .contacts__link:focus {

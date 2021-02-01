@@ -30,12 +30,24 @@
   @media not screen and (min-width: $tablet) {
     display: none;
   }
-  margin: 21px auto;
-}
 
+  @media screen and (min-width: $tablet) {
+    margin-top: 21px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    margin-top: 32px;
+  }
+}
 .contacts__item {
   &:not(:last-child) {
-    margin-bottom: 10px;
+    margin-right: 30px;
+  }
+
+  @media not screen and (min-width: $desktop) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 }
 .contacts__icon {
@@ -52,6 +64,10 @@
   letter-spacing: 0.02em;
   color: getColor('grey-text');
   @include transitions(color);
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+  }
 
   &:hover,
   &:focus {
