@@ -1,20 +1,2 @@
-.site__nav {
-  @media screen and (max-width: 768px) {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    background-color: getColor('bgc-main');
-    padding: 48px 40px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-    &.is-open {
-      display: block;
-    }
-  }
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
-}
+1) в мобільній версії меню додала до посилань навігації верхній та нижній padding по 16px, щоб було більше простору тикати пальцем. 
+Це не лишній padding, це я так вирішила)

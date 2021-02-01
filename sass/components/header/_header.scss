@@ -7,8 +7,11 @@
 .navigation {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  min-height: 60px;
+
+  @media not screen and (min-width: $tablet) {
+    justify-content: space-between;
+    min-height: 60px;
+  }
 }
 
 .nav__button {
