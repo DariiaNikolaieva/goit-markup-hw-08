@@ -20,7 +20,8 @@
 
 .site-nav__list {
   @media not screen and (min-width: $tablet) {
-    margin-bottom: 302px;
+    // margin-bottom: 302px;
+    margin-bottom: calc(151px + (302 - 151) * ((100vw - 300px) / (480 - 300)));
   }
   @media screen and (min-width: $tablet) {
     display: flex;
@@ -38,7 +39,8 @@
 
   @media not screen and (min-width: $tablet) {
     &:not(:last-child) {
-      margin-bottom: 32px;
+      // margin-bottom: 32px;
+      margin-bottom: calc(16px + (32 - 16) * ((100vw - 300px) / (480 - 300)));
     }
   }
 
@@ -53,7 +55,8 @@
   @media not screen and (min-width: $tablet) {
     padding-top: 16px;
     padding-bottom: 16px;
-    font-size: 40px;
+    // font-size: 40px;
+    font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (480 - 300)));
   }
   display: block;
   padding-bottom: 32px;

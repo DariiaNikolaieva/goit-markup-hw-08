@@ -441,7 +441,7 @@ body.modal-open {
 
 @media not screen and (min-width: 768px) {
   .site-nav__list {
-    margin-bottom: 302px;
+    margin-bottom: calc(151px + (302 - 151) * ((100vw - 300px) / (480 - 300)));
   }
 }
 
@@ -468,7 +468,7 @@ body.modal-open {
 
 @media not screen and (min-width: 768px) {
   .site-nav__item:not(:last-child) {
-    margin-bottom: 32px;
+    margin-bottom: calc(16px + (32 - 16) * ((100vw - 300px) / (480 - 300)));
   }
 }
 
@@ -498,7 +498,7 @@ body.modal-open {
   .site-nav__link {
     padding-top: 16px;
     padding-bottom: 16px;
-    font-size: 40px;
+    font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (480 - 300)));
   }
 }
 
@@ -531,7 +531,7 @@ body.modal-open {
 }
 
 .contacts-mobile__item:not(:last-child) {
-  margin-bottom: 32px;
+  margin-bottom: calc(16px + (32 - 16) * ((100vw - 300px) / (480 - 300)));
 }
 
 .contacts-mobile__item:last-child {
@@ -540,7 +540,7 @@ body.modal-open {
 
 .contacts-mobile__link {
   font-weight: 500;
-  font-size: 24px;
+  font-size: calc(12px + (24 - 12) * ((100vw - 300px) / (480 - 300)));
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #757575;
@@ -554,7 +554,7 @@ body.modal-open {
 
 .contacts-mobile__link:hover, .contacts-mobile__link:focus {
   color: #2196f3;
-  font-size: 34px;
+  font-size: calc(17px + (34 - 17) * ((100vw - 300px) / (480 - 300)));
   outline: none;
 }
 
@@ -645,7 +645,7 @@ body.modal-open {
 
 .mob-social__link {
   font-weight: 500;
-  font-size: 18px;
+  font-size: calc(9px + (18 - 9) * ((100vw - 300px) / (480 - 300)));
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #757575;

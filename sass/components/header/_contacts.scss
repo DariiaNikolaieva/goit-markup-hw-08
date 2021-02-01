@@ -5,7 +5,8 @@
 }
 .contacts-mobile__item {
   &:not(:last-child) {
-    margin-bottom: 32px;
+    // margin-bottom: 32px;
+    margin-bottom: calc(16px + (32 - 16) * ((100vw - 300px) / (480 - 300)));
   }
   &:last-child {
     margin-bottom: 64px;
@@ -13,7 +14,8 @@
 }
 .contacts-mobile__link {
   font-weight: 500;
-  font-size: 24px;
+  // font-size: 24px;
+  font-size: calc(12px + (24 - 12) * ((100vw - 300px) / (480 - 300)));
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: getColor('grey-text');
@@ -22,7 +24,8 @@
   &:hover,
   &:focus {
     color: getColor('accent-text');
-    font-size: 34px;
+    // font-size: 34px;
+    font-size: calc(17px + (34 - 17) * ((100vw - 300px) / (480 - 300)));
     outline: none;
   }
 }
