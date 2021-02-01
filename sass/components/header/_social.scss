@@ -1,18 +1,16 @@
 .mob-social__list {
-  @media screen and (max-width: $max-mobile) {
-    display: flex;
-  }
-  display: none;
-}
-.mob-social__item {
-  padding-right: 10px;
-  margin-right: 10px;
+  display: flex;
 
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.mob-social__item {
   &:not(:last-child) {
+    padding-right: 10px;
+    margin-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
-    // position: absolute;
-    // content: '|';
-    // color: getColor('grey-text');
   }
 }
 .mob-social__link {
@@ -20,11 +18,8 @@
   font-size: 18px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-
-  // &:not(:last-child) {
-  //   border-right: 1px solid rgba(33, 33, 33, 0.2);
-  // }
   color: getColor('grey-text');
+
   @include transitions(color);
 
   &:hover,

@@ -1,5 +1,5 @@
 .site__nav {
-  @media screen and (max-width: $max-mobile) {
+  @media not screen and (min-width: 768px) {
     display: none;
 
     position: absolute;
@@ -15,9 +15,7 @@
       display: block;
     }
   }
-  @media screen and (min-width: $tablet) {
-    display: flex;
-  }
+  display: flex;
 }
 
 .site-nav__list {
@@ -29,14 +27,11 @@
 }
 
 .site-nav__link {
-  @media screen and (max-width: $max-mobile) {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-  }
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
   @include transitions(color);
-
   &:hover,
   &:focus {
     color: getColor('accent-text');
