@@ -1,7 +1,10 @@
 .header {
   position: relative;
-  border-bottom: 1px solid getColor('border');
   background-color: getColor('bgc-main');
+
+  @media not screen and (min-width: $tablet) {
+    border-bottom: 1px solid getColor('border');
+  }
 }
 
 .navigation {
