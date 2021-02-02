@@ -739,22 +739,22 @@ body.modal-open {
 }
 
 .antenna::before {
-  background-image: url(../images/images-optimisized/svg/antenna.svg);
+  background-image: url(../../../images/svg/antenna.svg);
   background-size: 70px;
 }
 
 .clock::before {
-  background-image: url(../images/images-optimisized/svg/clock.svg);
+  background-image: url(../../../images/svg/clock.svg);
   background-size: 70px;
 }
 
 .diagram::before {
-  background-image: url(../images/images-optimisized/svg/diagram.svg);
+  background-image: url(../../../images/svg/diagram.svg);
   background-size: 70px;
 }
 
 .astronaut::before {
-  background-image: url(../images/images-optimisized/svg/astronaut.svg);
+  background-image: url(../../../images/svg/astronaut.svg);
   background-size: 70px;
 }
 
@@ -1018,7 +1018,7 @@ body.modal-open {
   display: block;
   width: 16px;
   height: 15px;
-  background-image: url(../images/images-optimisized/svg/checkbox.svg);
+  background-image: url(../images/svg/checkbox.svg);
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 250ms;
@@ -1028,11 +1028,11 @@ body.modal-open {
 }
 
 .agreement__label:hover::before {
-  background-image: url(../images/images-optimisized/svg/checkbox-focus.svg);
+  background-image: url(../images/svg/checkbox-focus.svg);
 }
 
 .agreement__checkbox:focus + .agreement__label::before {
-  background-image: url(../images/images-optimisized/svg/checkbox-focus.svg);
+  background-image: url(../images/svg/checkbox-focus.svg);
 }
 
 .agreement__checkbox:checked + .agreement__label::before {
@@ -1040,7 +1040,7 @@ body.modal-open {
   height: 16px;
   border-color: transparent;
   background-color: #2196f3;
-  background-image: url(../images/images-optimisized/svg/check-agreement.svg);
+  background-image: url(../images/svg/check-agreement.svg);
   background-size: contain;
   background-origin: border-box;
   -webkit-transition-property: fill;

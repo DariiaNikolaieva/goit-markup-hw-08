@@ -23,21 +23,21 @@
     display: block;
     width: 16px;
     height: 15px;
-    background-image: url(../images/images-optimisized/svg/checkbox.svg);
+    background-image: url(../images/svg/checkbox.svg);
     @include transitions(background-color);
   }
   &:hover::before {
-    background-image: url(../images/images-optimisized/svg/checkbox-focus.svg);
+    background-image: url(../images/svg/checkbox-focus.svg);
   }
   .agreement__checkbox:focus + &::before {
-    background-image: url(../images/images-optimisized/svg/checkbox-focus.svg);
+    background-image: url(../images/svg/checkbox-focus.svg);
   }
   .agreement__checkbox:checked + &::before {
     width: 16px;
     height: 16px;
     border-color: transparent;
     background-color: getColor('button');
-    background-image: url(../images/images-optimisized/svg/check-agreement.svg);
+    background-image: url(../images/svg/check-agreement.svg);
     background-size: contain;
     background-origin: border-box;
     @include transitions(fill);
