@@ -93,39 +93,30 @@
 }
 .team__social-list {
   display: flex;
+  padding-bottom: 24px;
   align-items: center;
-  // justify-content: space-between;
-  // margin-right: 122px;
-  // padding-bottom: 24px;
-  // margin-left: 122px;
+  justify-content: center;
+}
 
-  // @media screen and (min-width: $tablet) {
-  //   padding-right: 74px;
-  //   padding-bottom: 24px;
-  //   padding-left: 74px;
-  // }
-
-  // @media screen and (min-width: $desktop) {
-  //   padding-right: 32px;
-  //   padding-bottom: 30px;
-  //   padding-left: 32px;
-  // }
+.team__social-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 .team__social-link {
-  // display: inline-flex;
-  // align-items: center;
-  // justify-content: center;
-  // padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border: none;
   border-radius: 50%;
   fill: #afb1b8;
-  transition-property: color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transitions(color background-color);
 
-  margin-bottom: 24px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 .team__social-icon {
   width: 20px;

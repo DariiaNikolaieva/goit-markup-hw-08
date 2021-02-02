@@ -944,24 +944,44 @@ body.modal-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 24px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.team__social-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .team__social-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 44px;
   height: 44px;
   border: none;
   border-radius: 50%;
   fill: #afb1b8;
-  -webkit-transition-property: color, background-color;
-  transition-property: color, background-color;
+  -webkit-transition-property: color background-color;
+  transition-property: color background-color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 24px;
+}
+
+.team__social-link:not(:last-child) {
+  margin-right: 10px;
 }
 
 .team__social-icon {
