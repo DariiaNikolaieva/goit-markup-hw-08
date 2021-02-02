@@ -1,5 +1,5 @@
 .site__nav {
-  @media not screen and (min-width: $tablet) {
+  @media screen and (max-width: $max-mobile) {
     display: none;
 
     position: absolute;
@@ -19,7 +19,7 @@
 }
 
 .site-nav__list {
-  @media not screen and (min-width: $tablet) {
+  @media screen and (max-width: $max-mobile) {
     // margin-bottom: 302px;
     margin-bottom: calc(151px + (302 - 151) * ((100vw - 300px) / (480 - 300)));
   }
@@ -37,7 +37,7 @@
 .site-nav__item {
   position: relative;
 
-  @media not screen and (min-width: $tablet) {
+  @media screen and (max-width: $max-mobile) {
     &:not(:last-child) {
       // margin-bottom: 32px;
       margin-bottom: calc(16px + (32 - 16) * ((100vw - 300px) / (480 - 300)));
@@ -52,7 +52,7 @@
 }
 
 .site-nav__link {
-  @media not screen and (min-width: $tablet) {
+  @media screen and (max-width: $max-mobile) {
     padding-top: 16px;
     padding-bottom: 16px;
     // font-size: 40px;

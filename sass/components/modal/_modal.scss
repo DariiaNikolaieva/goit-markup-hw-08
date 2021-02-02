@@ -32,7 +32,7 @@
   opacity: 1;
   @include transitions(opacity);
 
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: $mobile) {
     position: absolute;
     right: 0;
     left: 0;
@@ -62,7 +62,7 @@
     outline: none;
   }
 
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: $mobile) {
     top: 8px;
     right: 8px;
   }
