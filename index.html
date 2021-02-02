@@ -131,7 +131,14 @@
                 <ul class="activity__list">
                     <li class="activity__item">
                         <div class="activity__overlay">
-                            <img src="./images/images-optimisized/jpg/activity-1.jpg" alt="ПК" width="370">
+                            <img
+                            srcset="
+                            ./images/jpg/activity__1.jpg 1x,
+                            ./images/jpg/activity__1@2x.jpg 2x
+                            "
+                            src="./images/jpg/activity__1.jpg" 
+                            alt="ПК" 
+                            width="370">
                         </div> 
                         <div class="activity__label">
                             <p>Десктопные приложения</p>
@@ -139,7 +146,12 @@
                     </li>
                     <li class="activity__item">
                         <div class="activity__overlay">
-                            <img src="./images/images-optimisized/jpg/activity-2.jpg" alt="Ноутбук" width="370">
+                            <img
+                            srcset="
+                            ./images/jpg/activity__2.jpg 1x,
+                            ./images/jpg/activity__2@2x.jpg 2x
+                            "
+                            src="./images/jpg/activity__2.jpg" alt="Ноутбук" width="370">
                         </div>
                         <div class="activity__label">
                             <p>Мобильные приложения</p>
@@ -147,7 +159,12 @@
                     </li>
                     <li class="activity__item">
                         <div class="activity__overlay">
-                            <img src="./images/images-optimisized/jpg/activity-3.jpg" alt="Планшет" width="370">
+                            <img 
+                            srcset="
+                            ./images/jpg/activity__3.jpg 1x,
+                            ./images/jpg/activity__3@2x.jpg 2x
+                            "
+                            src="./images/jpg/activity__3.jpg" alt="Планшет" width="370">
                         </div>
                         <div class="activity__label">
                             <p>Дизайнерские решения</p>
@@ -164,7 +181,31 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__item">
-                        <img class="team__photo" src="./images/images-optimisized/jpg/team-1.jpg" alt="Фото наша команда 1" width="270">
+                        <picture>
+                            <source 
+                            srcset="
+                            ./images/team/optimisizes-webp/team__1__mob.webp 1x,
+                            ./images/team/optimisizes-webp/team__1__mob@2x.webp 2x,
+                            ./images/team/optimisizes-webp/team__1__mob@3x.webp 3x,
+                            ./images/team/optimisizes-jpg/team__1__mob.jpg 1x,
+                            ./images/team/optimisizes-jpg/team__1__mob@2x.jpg 2x,
+                            ./images/team/optimisizes-jpg/team__1__mob@3x.jpg 3x
+                            "
+                            media="(max-width: 768px)"
+                            type="image/webp"
+                            >
+                            <img 
+                            class="team__photo" 
+                            srcset="
+                            ./images/jpg/team__1.jpg 1x,
+                            ./images/jpg/team__1@2x.jpg 2x
+                            " 
+                            src="
+                            ./images/team/optimisizes-jpg/team__1__mob.jpg"
+                            alt="Фото наша команда 1" 
+                            width="450"
+                            >
+                        </picture>
                         <h3 class="team__name">Игорь Демьяненко</h3>
                         <p class="team__position" lang="en">Product Designer</p>
                         <ul class="team__social-list">
@@ -199,7 +240,15 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img class="team__photo" src="./images/images-optimisized/jpg/team-2.jpg" alt="Фото наша команда 2" width="270">
+                        <img 
+                        class="team__photo" 
+                        srcset="
+                            ./images/jpg/team__2.jpg 1x,
+                            ./images/jpg/team__2@2x.jpg 2x
+                            "
+                        src="./images/jpg/team__2.jpg" 
+                        alt="Фото наша команда 2" 
+                        width="270">
                         <h3 class="team__name">Ольга Репина</h3>
                         <p class="team__position" lang="en">Frontend Developer</p>
                         <ul class="team__social-list">
@@ -234,7 +283,15 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img class="team__photo" src="./images/images-optimisized/jpg/team-3.jpg" alt="Фото наша команда 3" width="270">
+                        <img 
+                        class="team__photo" 
+                        srcset="
+                            ./images/jpg/team__3.jpg 1x,
+                            ./images/jpg/team__3@2x.jpg 2x
+                            " 
+                        src="./images/jpg/team__3.jpg" 
+                        alt="Фото наша команда 3" 
+                        width="270">
                         <h3 class="team__name">Николай Тарасов</h3>
                         <p class="team__position" lang="en">Marketing</p>
                         <ul class="team__social-list">
@@ -269,7 +326,13 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img class="team__photo" src="./images/images-optimisized/jpg/team-4.jpg" alt="Фото наша команда 4" width="270">
+                        <img 
+                        class="team__photo" 
+                        srcset="
+                            ./images/jpg/team__4.jpg 1x,
+                            ./images/jpg/team__4@2x.jpg 2x
+                            " 
+                        src="./images/jpg/team__4.jpg" alt="Фото наша команда 4" width="270">
                         <h3 class="team__name">Михаил Ермаков</h3>
                         <p class="team__position" lang="en">UI Designer</p>
                         <ul class="team__social-list">
