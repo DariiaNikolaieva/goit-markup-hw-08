@@ -9,11 +9,42 @@
   background-position: center;
   background-size: cover;
 
-  @media screen and (max-width: $max-mobile) {
+  @media screen and (max-width: 480px) {
+    height: calc(200px + (400 - 200) * ((100vw - 300px) / (480 - 300)));
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-bgimage/optimisized-jpg/hero__mob.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-bgimage/optimisized-jpg/hero__mob@2x.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-bgimage/optimisized-jpg/hero__mob@3x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 480px) and (max-width: $max-mobile) {
     width: 100%;
     max-width: 480px;
-    // height: 400px;
-    height: calc(200px + (400 - 200) * ((100vw - 300px) / (480 - 300)));
+    height: 400px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
