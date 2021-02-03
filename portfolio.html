@@ -98,8 +98,33 @@
                     <li class="card__item">
                         <a class="card__link" href="">
                             <div class="card__image">
-                                <img src=./images/images-optimisized/jpg/portfolio-1.jpg alt="На экране три карточки контакта" width="370"
-                                    height="294">
+                                <picture>
+                                    <source 
+                                    srcset="
+                                        ./images/portfolio/optimisized-webp/portfolio__1.webp 1x,
+                                        ./images/portfolio/optimisized-webp/portfolio__1@2x.webp 2x,
+                                        ./images/portfolio/optimisized-webp/portfolio__1@3x.webp 3x,
+                                        ./images/portfolio/optimisized-jpg/portfolio__1.jpg 1x,
+                                        ./images/portfolio/optimisized-jpg/portfolio__1@2x.jpg 2x,
+                                        ./images/portfolio/optimisized-jpg/portfolio__1@3x.jpg 3x
+                                        "
+                                    media="(min-width: 1200px)" type="image/webp" 
+                                    type="image/webp">
+                                    <!-- <source srcset="
+                                                            ./images/team/optimisized-webp/team__1__tab.webp 1x,
+                                                            ./images/team/optimisized-webp/team__1__tab@2x.webp 2x,
+                                                            ./images/team/optimisized-webp/team__1__tab@3x.webp 3x,
+                                                            ./images/team/optimisized-jpg/team__1__tab.jpg 1x,
+                                                            ./images/team/optimisized-jpg/team__1__tab@2x.jpg 2x,
+                                                            ./images/team/optimisized-jpg/team__1__tab@3x.jpg 3x
+                                                            " media="(max-width: 1199px)" type="image/webp">
+                                    <source srcset="
+                                                            ./images/team/optimisized-webp/team__1__desk.webp,
+                                                            ./images/team/optimisized-jpg/team__1__desk.jpg,
+                                                            " media="(min-width: 1200px)" type="image/webp"> -->
+                                    <img src="./images/portfolio/optimisized-jpg/portfolio__1@2x.jpg" 
+                                    alt="На экране три карточки контакта">
+                                </picture>
                                 <div class="card__overlay">
                                     <p class="card__summary">Технокряк это современная площадка распространения коронавируса.
                                         Компании используют эту платформу для цифрового
