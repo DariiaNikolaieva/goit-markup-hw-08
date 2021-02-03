@@ -678,7 +678,7 @@ body.modal-open {
 
 @media screen and (max-width: 480px) {
   .hero__overlay {
-    height: calc(200px + (400 - 200) * ((100vw - 300px) / (480 - 300)));
+    height: calc(300px + (400 - 300) * ((100vw - 300px) / (480 - 300)));
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bgimage/optimisized-jpg/hero__mob.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bgimage/optimisized-jpg/hero__mob.jpg);
   }
@@ -795,7 +795,7 @@ body.modal-open {
 
 @media screen and (max-width: 480px) {
   .hero__title {
-    font-size: calc(13px + (26 - 13) * ((100vw - 300px) / (480 - 300)));
+    font-size: calc(19px + (26 - 19) * ((100vw - 300px) / (480 - 300)));
   }
 }
 
@@ -815,15 +815,15 @@ body.modal-open {
   border-style: none;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .hero__button {
-    width: calc(100px + (200 - 100) * ((100vw - 300px) / (480 - 300)));
-    height: calc(25px + (50 - 25) * ((100vw - 300px) / (480 - 300)));
-    font-size: calc(6px + (16 - 8) * ((100vw - 300px) / (480 - 300)));
-    padding-top: calc(5px + (10 - 5) * ((100vw - 300px) / (480 - 300)));
-    padding-right: calc(16px + (32 - 15) * ((100vw - 300px) / (480 - 300)));
-    padding-bottom: calc(5px + (10 - 5) * ((100vw - 300px) / (480 - 300)));
-    padding-left: calc(16px + (32 - 15) * ((100vw - 300px) / (480 - 300)));
+    width: calc(150px + (200 - 150) * ((100vw - 300px) / (480 - 300)));
+    height: calc(38px + (50 - 38) * ((100vw - 300px) / (480 - 300)));
+    font-size: calc(10px + (16 - 11) * ((100vw - 300px) / (480 - 300)));
+    padding-top: calc(8px + (10 - 8) * ((100vw - 300px) / (480 - 300)));
+    padding-right: calc(24px + (32 - 24) * ((100vw - 300px) / (480 - 300)));
+    padding-bottom: calc(8px + (10 - 8) * ((100vw - 300px) / (480 - 300)));
+    padding-left: calc(24px + (32 - 24) * ((100vw - 300px) / (480 - 300)));
   }
 }
 
