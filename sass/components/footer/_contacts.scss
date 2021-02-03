@@ -12,10 +12,17 @@
 }
 
 .footer__contacts-tab {
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: baseline;
+  }
 }
+
 .footer__container {
   @media screen and (min-width: $desktop) {
     display: flex;
