@@ -10,12 +10,29 @@
     text-align: center;
   }
 }
-// .footer__container {
-//   display: flex;
-//   align-items: baseline;
-// }
+
+.footer__contacts-tab {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+.footer__container {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: baseline;
+  }
+}
 .footer__contacts {
   margin-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 165px;
+    text-align: center;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 82px;
+    text-align: start;
+  }
 }
 .logo__footer {
   //   margin-right: 86px;

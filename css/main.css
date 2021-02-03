@@ -351,6 +351,9 @@ body.modal-open {
 .header {
   position: relative;
   background-color: #ffffff;
+}
+
+.header__border {
   border-bottom: 1px solid #ececec;
 }
 
@@ -1278,8 +1281,45 @@ body.modal-open {
   }
 }
 
+.footer__contacts-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
 .footer__contacts {
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__contacts {
+    margin-right: 165px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__contacts {
+    margin-right: 82px;
+    text-align: start;
+  }
 }
 
 .logo__footer {
@@ -1300,6 +1340,19 @@ body.modal-open {
 
 .addressbox {
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 768px) {
+  .join {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .join {
+    margin-right: 93px;
+    text-align: start;
+  }
 }
 
 .join__title {
@@ -1363,16 +1416,35 @@ body.modal-open {
   margin-top: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .subscribe {
+    margin-top: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    text-align: start;
+  }
+}
+
 .subscribe__label {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
-.subscribe__button-form {
-  margin-top: 20px;
+@media screen and (min-width: 1200px) {
+  .subscribe__button-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
 }
 
 .subscribe__input {
@@ -1393,6 +1465,22 @@ body.modal-open {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscribe__input {
+    width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe__input {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 }
 
 .subscribe__input:focus,

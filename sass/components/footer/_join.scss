@@ -1,5 +1,12 @@
 .join {
-  //   margin-left: 70px;
+  @media screen and (min-width: $tablet) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 93px;
+    text-align: start;
+  }
 }
 .join__title {
   font-weight: 700;

@@ -1,9 +1,11 @@
 .header {
   position: relative;
   background-color: getColor('bgc-main');
-  border-bottom: 1px solid getColor('border');
 }
 
+.header__border {
+  border-bottom: 1px solid getColor('border');
+}
 .navigation {
   display: flex;
   align-items: center;
