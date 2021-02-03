@@ -669,7 +669,9 @@ body.modal-open {
 .hero__overlay {
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
@@ -721,7 +723,8 @@ body.modal-open {
 
 @media screen and (min-width: 1200px) {
   .hero__overlay {
-    width: 1600px;
+    width: 100%;
+    max-width: 1600px;
     height: 600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bgimage/optimisized-jpg/hero__desktop.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bgimage/optimisized-jpg/hero__desktop.jpg);
