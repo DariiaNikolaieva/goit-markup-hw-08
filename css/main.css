@@ -376,7 +376,7 @@ body.modal-open {
   position: absolute;
   top: 10px;
   right: 15px;
-  z-index: 1;
+  z-index: 2;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -425,6 +425,7 @@ body.modal-open {
   .site__nav {
     display: none;
     position: absolute;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
@@ -1432,7 +1433,7 @@ body.modal-open {
 }
 
 .backdrop {
-  z-index: 2;
+  z-index: 3;
   position: fixed;
   top: 0;
   left: 0;
