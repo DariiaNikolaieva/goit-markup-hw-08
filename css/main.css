@@ -677,8 +677,9 @@ body.modal-open {
 
 @media screen and (max-width: 767px) {
   .hero__overlay {
-    width: 480px;
-    height: 400px;
+    width: 100%;
+    max-width: 480px;
+    height: calc(200px + (400 - 200) * ((100vw - 300px) / (480 - 300)));
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bgimage/optimisized-jpg/hero__mob.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bgimage/optimisized-jpg/hero__mob.jpg);
   }
@@ -700,7 +701,8 @@ body.modal-open {
 
 @media screen and (min-width: 768px) {
   .hero__overlay {
-    width: 768px;
+    width: 100%;
+    max-width: 768px;
     height: 400px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bgimage/optimisized-jpg/hero__tablet.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bgimage/optimisized-jpg/hero__tablet.jpg);
@@ -768,6 +770,12 @@ body.modal-open {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 480px) {
+  .hero__title {
+    font-size: calc(13px + (26 - 13) * ((100vw - 300px) / (480 - 300)));
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero__title {
     width: 696px;
@@ -777,8 +785,23 @@ body.modal-open {
 }
 
 .hero__button {
-  padding: 10px 32px;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
   border-style: none;
+}
+
+@media screen and (max-width: 480px) {
+  .hero__button {
+    width: calc(100px + (200 - 100) * ((100vw - 300px) / (480 - 300)));
+    height: calc(25px + (50 - 25) * ((100vw - 300px) / (480 - 300)));
+    font-size: calc(6px + (16 - 8) * ((100vw - 300px) / (480 - 300)));
+    padding-top: calc(5px + (10 - 5) * ((100vw - 300px) / (480 - 300)));
+    padding-right: calc(16px + (32 - 15) * ((100vw - 300px) / (480 - 300)));
+    padding-bottom: calc(5px + (10 - 5) * ((100vw - 300px) / (480 - 300)));
+    padding-left: calc(16px + (32 - 15) * ((100vw - 300px) / (480 - 300)));
+  }
 }
 
 .benefit {
@@ -1335,8 +1358,8 @@ body.modal-open {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
-  background-color: var(--accent-bgc);
-  color: var(--bgc-accent-text-color);
+  background-color: #2f303a;
+  color: #ffffff;
   font-size: 14px;
   padding: 15px 16px;
   width: 100%;
