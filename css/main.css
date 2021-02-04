@@ -2010,6 +2010,7 @@ body.modal-open {
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
+  margin-bottom: 4px;
 }
 
 .card__type {
