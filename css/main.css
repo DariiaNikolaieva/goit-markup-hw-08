@@ -1922,12 +1922,32 @@ body.modal-open {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .card__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0;
+  }
+}
+
 .card__item {
   cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
   .card__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card__item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  .card__item:nth-child(-n + 8) {
     margin-bottom: 30px;
   }
 }
