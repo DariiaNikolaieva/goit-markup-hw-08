@@ -2012,6 +2012,16 @@ body.modal-open {
   padding: 63px 24px;
 }
 
+@media screen and (max-width: 479px) {
+  .card__summary {
+    font-size: calc(11px + (18 - 11) * ((100vw - 300px) / (480 - 300)));
+    padding-top: calc(31px + (63 - 31) * ((100vw - 300px) / (480 - 300)));
+    padding-right: calc(12px + (24 - 12) * ((100vw - 300px) / (480 - 300)));
+    padding-bottom: calc(31px + (63 - 31) * ((100vw - 300px) / (480 - 300)));
+    padding-left: calc(12px + (24 - 12) * ((100vw - 300px) / (480 - 300)));
+  }
+}
+
 .card__link:hover .card__overlay,
 .card__link:focus .card__overlay {
   -webkit-transform: translateY(0);
