@@ -8,6 +8,10 @@
     margin-bottom: 30px;
     justify-content: center;
   }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }
 .button__item:not(:last-child) {
   margin-right: 8px;

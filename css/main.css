@@ -1188,6 +1188,7 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .clients__title {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 
@@ -1330,6 +1331,7 @@ body.modal-open {
 
 @media screen and (min-width: 1200px) {
   .footer__contacts {
+    margin-bottom: 0;
     margin-right: 82px;
     text-align: start;
   }
@@ -1882,6 +1884,12 @@ body.modal-open {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button__list {
+    margin-bottom: 50px;
   }
 }
 
